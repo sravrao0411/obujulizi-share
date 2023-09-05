@@ -31,11 +31,18 @@ bar to search for stories based on keywords. Users can also choose to read stori
 See more details [here](https://scholarcommons.scu.edu/cseng_senior/262/).
 
 # Project Attributes
-User Interface Design:
+##  User Interface Design
 
-Code Architecture: 
+### Color Palette and Visual Hierarchy
+All three apps maintain clean and simple user interfaces using a carefully selected color palette. The colors are chosen to emphasize certain sections of the app and provide a clear visual hierarchy. For instance, important buttons and sections are highlighted with bright colors, while less important elements use softer tones.
 
-Flutter Framework: 
+### Accessibility
+We've designed the app to be user-friendly, with an intuitive flow that guides users naturally from one section to another. You can easily perform tasks by following the on-screen instructions and using the clearly labeled buttons. The UI also utilized clear font styles in sans-serif font families, to make the text easier to read for users.
+
+## Code Architecture 
+Our project is structured using a feature-first folder structure, which promotes modularity, maintainability, and scalability. The codebase is organized into three main folders, each representing a distinct app within our project. Additionally, we have dedicated folders for utilities and reusable widgets to enhance code organization and reusability.
+
+## Flutter Framework 
 
 Contact: srav.rao0411@gmail.com
 
