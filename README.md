@@ -17,8 +17,7 @@ Content Managing:
 
 Story Sharing:
 
-# jkdsfj
-
+# 
 User Interface Design:
 
 Code Architecture: 
