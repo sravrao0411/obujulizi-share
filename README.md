@@ -11,15 +11,32 @@ to provide more targeted support.
 Front-End Development | HTTP Connections | UI/UX Design
 
 # The Three Parts
-Interviewing: 
+Interviewing - Android Application: Designed to allow users to create an account and sign
+in; the credentials created on this application will allow access to the Content Managing and Stories applications.
+After signing in and accepting Rose Academies’ privacy policy, users are directed to the home page. The home
+page displays a list of profiles that have previously interviewed with the organization. Each profile page consists of
+relevant information, such as name, contact information, and a list of interviews for each interviewee. Users can create
+profiles and add new interviews for a profile by reviewing the interview guide, recording a digital signature, where the
+interviewee consents to giving an interview, before finally uploading new interview data.
 
-Content Managing: 
+Content Managing - Web Application: Serves as a platform for users to manage incoming
+interview data from the Interviews application. Each interview has a default status of ”pending.” Users can select an
+interview to view its details, set its approval status, and create a story based on the interview content. Users also have
+the option to create a story directly from a list of approved interviews. They can choose to save their draft or publish
+the story.
 
-Story Sharing:
+Story Sharing - Android Application: Allows users to view published stories generated from the Content Managing application. Stories are presented in a list format, and users may use the search functionality in the top
+bar to search for stories based on keywords. Users can also choose to read stories of their interest from the list.
 
-# 
+See more details [here](https://scholarcommons.scu.edu/cseng_senior/262/).
+
+# Project Attributes
 User Interface Design:
 
 Code Architecture: 
 
 Flutter Framework: 
+
+Contact: srav.rao0411@gmail.com
+
+Copyright © 2023 Sravani Polkampalli
