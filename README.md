@@ -1,4 +1,6 @@
 # Obujulizi Share
+### Front End: Flutter
+
 This repository contains only the code I was responsible for.
 
 My project partner, [Aastha Khare](https://www.linkedin.com/in/aastha-khare-221140142/), and I co-developed Obujulizi Share for our [senior design](https://www.scu.edu/engineering/undergraduate/senior-design/2023-senior-design/) project at Santa Clara University's undergraduate engineering school. We created obujulizi share for [Rose Academies](https://roseacademies.org/), a non-profit organization that helps impoverished communities based in Sub-Saharan Africa.
@@ -31,18 +33,18 @@ bar to search for stories based on keywords. Users can also choose to read stori
 See more details [here](https://scholarcommons.scu.edu/cseng_senior/262/).
 
 # Project Attributes
-##  User Interface Design
+###  User Interface Design
 
-### Color Palette and Visual Hierarchy
+#### Color Palette and Visual Hierarchy
 All three apps maintain clean and simple user interfaces using a carefully selected color palette. The colors were chosen to emphasize certain sections of the app and provide a clear visual hierarchy. For instance, important buttons and sections are highlighted with bright colors, while less important elements use softer tones.
 
-### Accessibility
+#### Accessibility
 We've designed the app to be user-friendly, with an intuitive flow that guides users naturally from one section to another. You can easily perform tasks by following the on-screen instructions and using the clearly labeled buttons. The UI also utilized clear font styles in sans-serif font families, to make the text easier to read for users.
 
-## Code Architecture
+### Code Architecture
 We have designed our Flutter code to be structured using a feature-first folder structure, which promotes modularity, maintainability, and scalability. The codebase is organized into three main folders, each representing a distinct app within our project. Additionally, we have dedicated folders for utilities and widget components to enhance code organization and reusability.
 
-## Flutter Framework
+### Flutter Framework
 We strived to utilize Flutter's open-source documentation and various available packages. We chose the Flutter framework because it allows us to create applications that run seamlessly on multiple platforms from a single codebase. This means we can reach our users on both mobile and web without the overhead of maintaining separate codebases. Flutter's hot reload feature has also significantly accelerated our development process, allowing us to iterate rapidly and fine-tune our user interfaces.
 
 For any inquiries or feedback, please feel free to contact me at srav.rao0411@gmail.com
