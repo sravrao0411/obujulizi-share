@@ -23,7 +23,7 @@ class InterviewCreation {
           interviewFileFormat: interviewFileFormat,
           digitalSignatureFileFormat: digitalSignatureFileFormat);
       http.Response res = await http
-          .post(Uri.parse('${EndPoints.s3bucket}/$interviewContentType'),
+          .post(Uri.parse('url'),
               body: contentInfo.toJson(),
               headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
@@ -145,7 +145,7 @@ class InterviewCreation {
   }) async {
     try {
       http.Response res =
-          await http.post(Uri.parse('${EndPoints.url}/interviews'),
+          await http.post(Uri.parse('url'),
               body: jsonEncode({
                 'profile_id': profileId,
                 'digital_signature': signatureKey,
@@ -177,7 +177,7 @@ class InterviewCreation {
       List<InfoRow> interviews = [];
       http.Response res = await http.post(
           Uri.parse(
-              'https://2jlh65iaqhaadnumtxsdjtahcq0yhjoi.lambda-url.us-west-1.on.aws/'),
+              'url'),
           body: jsonEncode({
             'profile_id': profileId,
           }),

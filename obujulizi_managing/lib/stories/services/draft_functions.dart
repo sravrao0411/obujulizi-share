@@ -12,7 +12,7 @@ class DraftFunction {
       List<Story> stories = [];
       http.Response res = await http.get(
         Uri.parse(
-            'https://r3gf3sqwyq3um7s3lxg54w3woi0tdhgp.lambda-url.us-west-1.on.aws/'),
+            'url'),
       );
       if (context.mounted) {
         httpErrorHandle(response: res, context: context, onSuccess: () {});
@@ -41,7 +41,7 @@ class DraftFunction {
       List<Draft> drafts = [];
       http.Response res = await http.get(
         Uri.parse(
-            'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/stories/get-drafts'),
+            'url'),
       );
       if (context.mounted) {
         httpErrorHandle(response: res, context: context, onSuccess: () {});
@@ -80,7 +80,7 @@ class DraftFunction {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/stories/update'),
+              'url'),
           body: jsonEncode({
             'interview_id': interviewId,
             'profile_id': profileId,
@@ -120,7 +120,7 @@ class DraftFunction {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/stories/update'),
+              'url'),
           body: jsonEncode({
             'interview_id': interviewId,
             'profile_id': profileId,
@@ -157,7 +157,7 @@ class DraftFunction {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/stories/create'),
+              'url'),
           body: jsonEncode({
             'interview_id': interviewId,
             'profile_id': profileId,

@@ -16,6 +16,7 @@ class VideoInterview extends StatefulWidget {
 }
 
 class _VideoInterviewState extends State<VideoInterview> {
+ // ignore: unused_field
  VideoPlayerController? _signaturePlayerController;
   // ChewieController? _signatureChewieController;
 
@@ -27,7 +28,7 @@ class _VideoInterviewState extends State<VideoInterview> {
   Future<void> download() async {
     String path = await FileSaver.instance.saveFile(
         name: "video_interview",
-        link: LinkDetails(link: 'https://testbucket63419.s3.us-west-1.amazonaws.com/${widget.surl}'),
+        link: LinkDetails(link: 'url'),
         ext: "mp4",
         mimeType: MimeType.mp4);
     log(path);

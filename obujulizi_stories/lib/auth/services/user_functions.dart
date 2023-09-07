@@ -12,7 +12,7 @@ class UserAuthentication {
     required String password,
   }) async {
     try {
-      http.Response res = await http.post(Uri.parse('${EndPoints.url}/login'),
+      http.Response res = await http.post(Uri.parse('url'),
           body: jsonEncode({'email': email, 'password': password}),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',

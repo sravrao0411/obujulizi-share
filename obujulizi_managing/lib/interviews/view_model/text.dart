@@ -23,7 +23,7 @@ class _TextInterviewState extends State<TextInterview> {
   Future<void> download() async {
     String path = await FileSaver.instance.saveFile(
         name: "text_interview",
-        link: LinkDetails(link:'https://testbucket63419.s3.us-west-1.amazonaws.com/${widget.text}'),
+        link: LinkDetails(link:'url'),
         ext: "txt",
         mimeType: MimeType.text);
     log(path);

@@ -113,7 +113,7 @@ class AudioInterviewState extends State<AudioInterview> {
   Future<void> download() async {
     String path = await FileSaver.instance.saveFile(
         name: "audio_interview",
-        link: LinkDetails(link: 'https://testbucket63419.s3.us-west-1.amazonaws.com/${widget.surl}'),
+        link: LinkDetails(link: 'url'),
         ext: "mp3",
         mimeType: MimeType.mp3);
     log(path);

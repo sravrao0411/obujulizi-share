@@ -11,7 +11,7 @@ class InterviewCreation {
       List<Interview> interviews = [];
       http.Response res = await http.get(
         Uri.parse(
-            'https://fkoadnxjimanii62ylbdq6it240wglyd.lambda-url.us-west-1.on.aws/'),
+            'url'),
       );
       if (context.mounted) {
         httpErrorHandle(response: res, context: context, onSuccess: () {});
@@ -41,7 +41,7 @@ class InterviewCreation {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/profiles/profile-details'),
+              'url'),
           body: jsonEncode(
               {'profile_id': profileId, 'interview_id': interviewId}),
           headers: <String, String>{
@@ -65,7 +65,7 @@ class InterviewCreation {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/interviews/interview-details'),
+              'url'),
           body: jsonEncode(
               {'profile_id': profileId, 'interview_id': interviewId}),
           headers: <String, String>{
@@ -91,7 +91,7 @@ class InterviewCreation {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/interviews/update-status'),
+              'url'),
           body: jsonEncode(
               {'interview_status': status, 'interview_id': interviewId}),
           headers: <String, String>{
@@ -113,7 +113,7 @@ class InterviewCreation {
     try {
       http.Response res = await http.post(
           Uri.parse(
-              'https://0qwamyy66l.execute-api.us-west-1.amazonaws.com/dev/interviews/update-flag'),
+              'url'),
           body: jsonEncode({'flagged': flag, 'interview_id': interviewId}),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
@@ -130,7 +130,7 @@ class InterviewCreation {
   Future<String> getTextFile({required String key, required BuildContext context}) async {
     try {
       String content = '';
-      String url = "https://testbucket63419.s3.us-west-1.amazonaws.com/$key";
+      String url = "url";
       var res = await http.read(Uri.parse(url)).then((String fileContents) {
         content = fileContents;
       }).catchError((error) {});

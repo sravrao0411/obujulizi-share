@@ -18,10 +18,10 @@ class HomeContentState extends State<HomeContent> {
           Container(
             decoration: BoxDecoration(
                       color: pink, boxShadow: kElevationToShadow[4]),
-            child: Padding(
-              padding: const EdgeInsets.all(24.0),
+            child: const Padding(
+              padding: EdgeInsets.all(24.0),
               child: Column(
-                children: const [
+                children: [
                   Text("Welcome To Our Administration Page",
                       style: otherHeadline1),
                   mediumVertical,
@@ -33,24 +33,24 @@ class HomeContentState extends State<HomeContent> {
             ),
           ),
           mediumVertical,
-          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const Text("Things to keep in mind:", style: headline2),
+          const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text("Things to keep in mind:", style: headline2),
             mediumVertical,
-            const Text(
+            Text(
                 "• All data portrayed in this website is private and should not be shared with the public",
                 style: bodyText3),
             smallVertical,
-            const Text("• Follow this process: ", style: bodyText3),
+            Text("• Follow this process: ", style: bodyText3),
             extraSmallVertical,
             Row(
-              children: const [
+              children: [
                 largeHorizontal,
                 Text("1.  View all interviews in the dashboard", style: bodyText2),
               ],
             ),
             extraSmallVertical,
             Row(
-              children: const [
+              children: [
                 largeHorizontal,
                 Text("2.  Choose an interview and view its details",
                     style: bodyText2),
@@ -58,7 +58,7 @@ class HomeContentState extends State<HomeContent> {
             ),
             extraSmallVertical,
             Row(
-              children: const [
+              children: [
                 largeHorizontal,
                 Expanded(
                   child: Text(
@@ -69,7 +69,7 @@ class HomeContentState extends State<HomeContent> {
             ),
             extraSmallVertical,
             Row(
-              children: const [
+              children: [
                 largeHorizontal,
                 Expanded(
                   child: Text(
@@ -80,7 +80,7 @@ class HomeContentState extends State<HomeContent> {
             ),
             extraSmallVertical,
             Row(
-              children: const [
+              children: [
                 largeHorizontal,
                 Expanded(
                   child: Text(

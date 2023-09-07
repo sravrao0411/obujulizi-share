@@ -14,7 +14,7 @@ class ProfileSetUp {
     try {
       final navigator = Navigator.of(context);
       http.Response res = await http.post(
-          Uri.parse('${EndPoints.url}/profiles'),
+          Uri.parse('url'),
           body: jsonEncode({'name': name, 'contact_info': contactInfo}),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
@@ -40,7 +40,7 @@ class ProfileSetUp {
       bool success = false;
       List<Profile> profiles = [];
       http.Response res =
-          await http.get(Uri.parse('${EndPoints.url}/getallprofiles'));
+          await http.get(Uri.parse('url'));
       if (context.mounted) {
         httpErrorHandle(
             response: res,

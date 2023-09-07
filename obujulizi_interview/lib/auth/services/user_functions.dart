@@ -21,7 +21,7 @@ class UserAuthentication {
         lastName: lastName,
       );
 
-      http.Response res = await http.post(Uri.parse('${EndPoints.url}/users'),
+      http.Response res = await http.post(Uri.parse('url'),
           body: user.toJson(),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
@@ -52,7 +52,7 @@ class UserAuthentication {
     required String password,
   }) async {
     try {
-      http.Response res = await http.post(Uri.parse('${EndPoints.url}/login'),
+      http.Response res = await http.post(Uri.parse('url'),
           body: jsonEncode({'email': email, 'password': password}),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
@@ -77,7 +77,7 @@ class UserAuthentication {
   }) async {
     try {
       http.Response res = await http.post(
-          Uri.parse('https://grhys5d6mv2zr2brcm4g7vrmhu0uegxn.lambda-url.us-west-1.on.aws/'),
+          Uri.parse('url'),
           body: jsonEncode({'email': email, 'password': password}),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
