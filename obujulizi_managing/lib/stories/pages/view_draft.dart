@@ -93,8 +93,8 @@ class ViewDraftState extends State<ViewDraft> {
         body: Padding(
       padding: pagePadding,
       child: Column(children: [
-        Row(
-          children: const [
+        const Row(
+          children: [
             smallHorizontal,
             Text("Create Story", style: headline1),
           ],

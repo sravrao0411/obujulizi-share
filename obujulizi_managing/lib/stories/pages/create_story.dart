@@ -71,6 +71,7 @@ class CreateStoryState extends State<CreateStory> {
         body: Padding(
       padding: pagePadding,
       child: Column(children: [
+        // ignore: prefer_const_constructors
         Row(
           children: const [
             smallHorizontal,
